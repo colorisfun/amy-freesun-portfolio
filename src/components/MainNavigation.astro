@@ -1,0 +1,55 @@
+---
+const navItems = [
+  { title: 'Page Title 1', url: '/', barColor: '#74f17b' },
+  { title: 'Page Title 2', url: '/', barColor: '#ff82c2' },
+  { title: 'Page Title 3', url: '/', barColor: '#f8a536' },
+  { title: 'Page Title 4', url: '/', barColor: '#f75641' },
+];
+---
+
+<nav class="main-nav">
+  {navItems.map((item) => (
+    <a href={item.url} class="nav-item" style={`background-color: ${item.barColor};`}>
+      <span class="nav-text">{item.title}</span>
+    </a>
+  ))}
+</nav>
+
+<style>
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    z-index: 1000;
+  }
+
+  .nav-item {
+    position: relative;
+    overflow: hidden;
+    width: 40px;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    transition: width 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .nav-item:hover {
+    width: 100px;
+  }
+
+  .nav-text {
+    position: absolute;
+    bottom: 9rem;
+    left: 2rem;
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    
+    color: var(--background);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+</style>

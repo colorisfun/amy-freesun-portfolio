@@ -1,0 +1,21 @@
+:root {
+	--background: #fdfcf7;
+	--font-color: #3a3a3a;
+}
+
+html {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	background-color: var(--background);
+	color: var(--font-color);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+}
