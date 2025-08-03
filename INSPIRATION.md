@@ -20,10 +20,10 @@ This document is a living mood board for the animations, transitions, and micro-
 
 ---
 
-### (Add Your Next Idea Here)
+### Gallery Item on Hover
 
-- **Link:** 
-- **Key Elements:** 
+- **https://www.instagram.com/reel/DKUOoNIN7tD/?igsh=c205MWRjcWNsb2N6:** 
+- **I love how the thumbnail rolls through the different images kind of like a slot machine. i think it would be great if on hover, the project ** 
 - **Where to Use:** 
 
 ---
