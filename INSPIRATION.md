@@ -36,10 +36,8 @@ This document is a living mood board for the animations, transitions, and micro-
 
 ---
 
-### (Add Your Next Idea Here)
-
-- **Link:** 
-- **Key Elements:** 
+### Project thumbnails framed perfectly centered a la Wes AnderElements*https://www.instagram.com/p/Ck5_kmcMlyg/?igsh=cjk3aW9qNWRsZzNw** 
+- **I'd love for the thumbnails and maybe the hero image of the project case study page to somehow be perfectly central like Wes Anderson-esque, but just the thumbnail and the hero, nowhere elWhere
 - **Where to Use:** 
 
 ---
