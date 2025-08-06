@@ -30,9 +30,9 @@ This document is a living mood board for the animations, transitions, and micro-
 
 ### (Add Your Next Idea Here)
 
-- **Link:** 
-- **Key Elements:** 
-- **Where to Use:** 
+- **Link:** https://www.instagram.com/p/DCR0VFdN1sk/?img_index=1
+- **Key Elements:** Blurred grainy effect on photo, slow dreamy pan on photo, text on top.
+- **Where to Use:** Transition from clicking on project thumbnail gallery to actual project case study page.
 
 ---
 
