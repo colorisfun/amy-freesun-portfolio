@@ -1,0 +1,95 @@
+---
+import { client } from '../lib/sanityClient';
+import groq from 'groq';
+
+const query = groq`*[_type == "settings"][0] {
+  footerNav
+}`;
+
+const settings = await client.fetch(query);
+const footerNav = settings?.footerNav || []; 
+const footerLinks = footerNav.map((linkText, index) => {
+  const isHidden = index > 0 ? 'is-hidden-desktop' : '';
+  let url = '#';
+  if (linkText.toLowerCase().includes('about')) {
+    url = '/about';
+  } else if (linkText.toLowerCase().includes('amy')) {
+    url = '/';
+  }
+  return { text: linkText, isHidden, url };
+});
+---
+
+<footer class="footer">
+  <div class="footer-links">
+    {footerLinks.map((link) => (
+      <a href={link.url} class={`footer-link ${link.isHidden}`}>
+        {link.text}
+      </a>
+    ))}
+  </div>
+</footer>
+
+<style>
+  .footer {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 1000;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .footer-link {
+    color: var(--font-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .footer-link:hover {
+    color: #B7B6AD; /* --- NEW HOVER COLOR --- */
+  }
+
+  .is-hidden-desktop {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+  }
+
+  /* We will remove this later when we add GSAP */
+  .footer:hover .is-hidden-desktop {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* --- Mobile Styles --- */
+  @media (max-width: 768px) {
+    .footer {
+      /* Reset desktop positioning */
+      top: auto;
+      left: 2rem;
+      bottom: 0;
+      
+      /* Your perfected positioning */
+      transform-origin: bottom left;
+      transform: rotate(-90deg) translateX(-3%);
+    }
+
+    .footer-links {
+      flex-direction: row;
+      gap: 1.5rem;
+      padding: 0 2rem;
+    }
+
+    /* On mobile, all links are always visible */
+    .is-hidden-desktop {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

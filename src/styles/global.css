@@ -1,13 +1,55 @@
+/* --- Andale Mono W01 Regular --- */
+@font-face {
+  font-family: 'Andale Mono';
+  src: url('/fonts/Andale Mono W01 Regular.woff2') format('woff2'),
+    url('/fonts/Andale Mono W01 Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- Andale Mono W01 Italic --- */
+@font-face {
+  font-family: 'Andale Mono';
+  src: url('/fonts/Andale Mono W01 Italic.woff2') format('woff2'),
+    url('/fonts/Andale Mono W01 Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* --- Andale Mono W01 Bold --- */
+@font-face {
+  font-family: 'Andale Mono';
+  src: url('/fonts/Andale Mono W01 Bold.woff2') format('woff2'),
+    url('/fonts/Andale Mono W01 Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- Andale Mono W01 Bold Italic --- */
+@font-face {
+  font-family: 'Andale Mono';
+  src: url('/fonts/Andale Mono W01 Bold Italic.woff2') format('woff2'),
+    url('/fonts/Andale Mono W01 Bold Italic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
 	--background: #fdfcf7;
 	--font-color: #3a3a3a;
+	--font-mono: 'Andale Mono', monospace;
 }
 
 html {
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: var(--font-mono);
 	background-color: var(--background);
 	color: var(--font-color);
+	font-synthesis: none;
 }
 
 *,
