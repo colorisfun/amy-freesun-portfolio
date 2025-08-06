@@ -28,11 +28,11 @@ This document is a living mood board for the animations, transitions, and micro-
 
 ---
 
-### (Add Your Next Idea Here)
+### Project Transition
 
 - **Link:** https://www.instagram.com/p/DCR0VFdN1sk/?img_index=1
-- **Key Elements:** Blurred grainy effect on photo, slow dreamy pan on photo, text on top.
-- **Where to Use:** Transition from clicking on project thumbnail gallery to actual project case study page.
+- **Key Elements:** Blurred grainy effect on photo, slow dreamy pan on photo, text on top. Blurry grainy photo fills entire page.
+- **Where to Use:** Transition from clicking on project thumbnail gallery to actual project case study page. The blurry photo in the back will be sourced from the hero image on the case study page.
 
 ---
 
