@@ -6,9 +6,9 @@ This document is a living mood board for the animations, transitions, and micro-
 
 ### Gallery Grid Entrance
 
-- **Link:** [Instagram Reel - Grid Reveal](https://www.instagram.com/reel/DJExqn1iK-n/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
+- **Link:** [Instagram Reel - Grid Reveal](https://github.com/colorisfun/amy-freesun-portfolio/blob/main/_inspiration-media./gallery-grid-thumbnail-on-page-load.mp4)
 - **Key Elements:** The staggered upward slide of the grid items. The subtle "overshoot and settle" easing (`back.out`) that feels like a slide clicking into place.
-- **Where to Use:** The main entrance animation for the `/gallery` page grid.
+- **Where to Use:** The main entrance animation for the `/gallery` page grid thumbnails.
 
 ---
 
